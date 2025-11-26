@@ -37,8 +37,9 @@ export class Product {
     }
 
     getPricesWithDiscount(): number {
-        const discountAmount = (this.price * this.discountPercentage) / 100;
-        const finalPrice = this.price - discountAmount;
+        const discountAmount = calculateDiscount(this.price, this.discountPercentage);
+        const taxAmount = calculateTax(this.price, this.category);
+        const finalPrice = this.price - discountAmount + taxAmount;
         return finalPrice; 
     }
 }
