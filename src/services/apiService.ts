@@ -1,4 +1,4 @@
-imp { AppError } from "../utils/errorHandler";
+import { AppError } from "../utils/errorHandler";
 
 export async function getAllProducts(): Promise<any[]> {
     const response = await fetch("https://dummyjson.com/products");
