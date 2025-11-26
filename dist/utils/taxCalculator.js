@@ -9,4 +9,3 @@ function calculateTax(price, category) {
     const taxAmount = price * taxRate;
     return taxAmount;
 }
-//# sourceMappingURL=taxCalculator.js.map

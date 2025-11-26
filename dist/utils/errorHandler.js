@@ -20,4 +20,3 @@ function handleError(error) {
         console.log("Unknow error");
     }
 }
-//# sourceMappingURL=errorHandler.js.map

@@ -4,12 +4,6 @@ exports.Product = void 0;
 const discountCalculator_1 = require("../utils/discountCalculator");
 const taxCalculator_1 = require("../utils/taxCalculator");
 class Product {
-    id;
-    name;
-    price;
-    description;
-    discountPercentage;
-    category;
     constructor(id, name, price, description, discountPercentage, category) {
         this.id = id;
         this.name = name;
@@ -26,7 +20,7 @@ class Product {
             " | Description: " + this.description;
         return displayItem;
     }
-    getPricesWithDiscount() {
+    getPriceWithDiscount() {
         const discountAmount = (0, discountCalculator_1.calculateDiscount)(this.price, this.discountPercentage);
         const taxAmount = (0, taxCalculator_1.calculateTax)(this.price, this.category);
         const finalPrice = this.price - discountAmount + taxAmount;
@@ -34,4 +28,3 @@ class Product {
     }
 }
 exports.Product = Product;
-//# sourceMappingURL=Product.js.map
