@@ -1,4 +1,6 @@
 import { calculateDiscount } from "../utils/discountCalculator";
+import { calculateTax } from "../utils/taxCalculator";
+
 
 export class Product {
     id: number;
