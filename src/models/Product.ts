@@ -1,3 +1,5 @@
+import { calculateDiscount } from "../utils/discountCalculator";
+
 export class Product {
     id: number;
     name: string;
