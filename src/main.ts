@@ -1,6 +1,6 @@
-import
-import
-import
+import { Product } from "./models/Product";
+import { getAllProducts } from "./services/apiService";
+import { handleError } from "./utils/errorHandler";
 
 async function start(); Promise<void> {
     try {
@@ -23,3 +23,5 @@ async function start(); Promise<void> {
         handleError(error);
     }
 }
+
+start();
